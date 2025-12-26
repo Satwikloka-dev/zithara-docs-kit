@@ -1,0 +1,38 @@
+### Webhook Events for Customer
+
+- CUSTOMER_CREATE
+- CUSTOMER_UPDATE
+
+---
+
+### Webhook Setup API
+
+```http
+POST /v1/webhook
+```
+#### payload
+``` json
+{
+  "url": "https://your-domain.com/customer-webhook",
+  "topic": "CUSTOMER_CREATE",
+  "headers": {
+    "authorization": "SECRET_TOKEN"
+  }
+}
+```
+#### Example Payload Received (on creation)
+```json
+{
+  "customer": {
+    "id": "853880",
+    "first_name": "Mr. osama",
+    "phone_number": "+918787878799",
+    "lead_source": "Form - Create lead"
+  }
+}
+```
+---
+
+#### Use Cases:
+
+- Automatically update your CRM/website/erp when new leads are created in Zithara

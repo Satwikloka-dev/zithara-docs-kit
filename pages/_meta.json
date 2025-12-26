@@ -1,7 +1,7 @@
 {
   "index": "Introduction",
   "getting-started": "Getting-Started",
-  "advanced": "Advanced (A Folder)",
+  "webhooks": "webhooks",
   "about": {
     "title": "About",
     "type": "page"
