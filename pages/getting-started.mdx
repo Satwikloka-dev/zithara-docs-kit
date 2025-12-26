@@ -1,0 +1,114 @@
+# Zithara Integration
+
+Connecting Your POS, Website & ERP with Zithara CRM
+
+---
+
+# API & Webhook Documentation
+
+## Integration Flow Overview
+
+This document helps you understand how Zithara communicates with your POS, Website, or ERP system.
+
+Using simple concepts, it shows how data flows using APIs (to send and get data) and Webhooks (to get notified automatically).
+
+---
+
+## Environment URLs
+
+### Development (for testing)
+
+```txt
+https://dev-pos-api.zithara.com/
+
+Client ID: f970661e759030a0c822ce4d
+Client Secret: 0a9b8b6fa9b456466f3aebba9b50f3006cdbf76ede034a96d97a
+```
+### For production, click on the Store.
+```txt
+https://pos-api.zithara.com/
+
+Under the store, go to Additional Settings,
+where you will find the Client ID and Secret.
+```
+
+## Customer (Lead) Integration
+
+### What is a Customer API?
+
+You use this to create, update, or read customer details from Zithara.
+
+---
+
+Connecting Your POS, Website & ERP with Zithara CRM
+
+---
+
+## 1. Create / Update Customer
+
+```http
+POST /v1/customer
+```
+### Use Case
+
+- Send customer data from your system to Zithara.
+- If the customer exists (based on phone or email), their record is updated.
+- If not, a new one is created.
+
+---
+
+### Analogy
+
+Like filling out and submitting a customer form — Zithara either adds a new record or updates the existing one.
+
+---
+
+### Authentication
+
+You need an access token (see Access Token section).
+
+---
+
+### Payload
+
+Full payload is available in the Postman Collection.
+
+---
+
+### Response
+
+- **201 Created** – when a new customer is added  
+- **200 OK** – when an existing customer is updated
+
+
+## 2. Get Customer Details
+
+```http
+GET /v1/customer
+```
+
+### Use Case
+
+Get customer details by providing one of the following:
+
+* Phone
+* Email
+* Zithara Customer ID
+* Platform Customer ID
+
+---
+
+### Example
+
+```http
+GET /v1/customer?phone=+1234567890
+```
+
+---
+
+### Response
+
+Customer profile in detail.
+
+More information and response format are available in the ```(<link Postman Collection> [https://documenter.getpostman.com/view/39564730/2sAYkLncbz#2f235d7c-f7f8-4590-8c5d-86e56bc33289](https://documenter.getpostman.com/view/39564730/2sAYkLncbz#2f235d7c-f7f8-4590-8c5d-86e56bc33289)</link>)```
+
