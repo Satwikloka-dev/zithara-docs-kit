@@ -1,7 +1,13 @@
 {
   "index": "Introduction",
   "getting-started": "Getting-Started",
+  "framework": "framework",
+  "core": "core",
   "webhooks": "webhooks",
+  "reputation": "reputation",
+  "channels": "channels",
+  "bots": "bots",
+  "use-cases": "use-cases",
   "about": {
     "title": "About",
     "type": "page"
@@ -9,7 +15,7 @@
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://www.zithara.in",
     "newWindow": true
   }
 }
