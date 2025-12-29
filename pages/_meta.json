@@ -1,11 +1,11 @@
 {
   "index": "Introduction",
-  "Getting-started": "Getting-Started",
-  "Framework": "Framework",
-  "Core": "Core",
-  "Webhooks": "Webhooks",
-  "Reputation": "Reputation",
-  "Channels": "Channels",
+  "getting-started": "Getting-Started",
+  "framework": "framework",
+  "core": "core",
+  "webhooks": "webhooks",
+  "reputation": "reputation",
+  "channels": "channels",
   "bots": "bots",
   "use-cases": "use-cases",
   "about": {
