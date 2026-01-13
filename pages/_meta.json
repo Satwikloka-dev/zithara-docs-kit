@@ -1,13 +1,13 @@
 {
   "index": "Introduction",
   "getting-started": "Getting-Started",
-  "framework": "framework",
-  "core": "core",
-  "webhooks": "webhooks",
+  "framework": "Framework",
+  "core": "Core",
+  "webhooks": "Webhooks",
   "reputation": "reputation",
-  "channels": "channels",
-  "bots": "bots",
-  "use-cases": "use-cases",
+  "channels": "Channels",
+  "bots": "Bots",
+  "use-cases": "Use-cases",
   "about": {
     "title": "About",
     "type": "page"
